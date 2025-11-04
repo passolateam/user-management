@@ -39,6 +39,6 @@ def delete_task(task_id):
     tasks = [t for t in tasks if t['id'] != task_id]
     return jsonify({'message': 'Task deleted'})
 
-#I added host and port
+#I added host and port. Let's try it in another way
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5010,debug=True)
